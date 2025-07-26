@@ -1,8 +1,6 @@
 #include "pch.h"
 
-#pragma comment(linker, "/export:exportedFunction1=legit1.exportedFunction1")
-#pragma comment(linker, "/export:exportedFunction2=legit1.exportedFunction2")
-#pragma comment(linker, "/export:exportedFunction3=legit1.exportedFunction3")
+#pragma comment(linker, "/export:GetUserNameExW=updater.GetUserNameExW")
 
 BOOL APIENTRY DllMain(HMODULE hModule,
     DWORD  ul_reason_for_call,

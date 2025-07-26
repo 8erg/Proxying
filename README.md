@@ -11,6 +11,6 @@ To further weaponized my malware, i decided to implement a dll proxying as it is
 + [x] Find a dll used by a legitimate executable
 + [x] Identify exported functions
 + [x] Test it with a message box, while proxying
-+ [ ] Create your dll with your own implementation that will inject your stager
-+ [ ] Add the exported functions that will be redirected
-+ [ ] Test the functionnality
++ [x] Create your dll with your own implementation that will inject your stager
++ [x] Add the exported functions that will be redirected
++ [x] Test the functionnality

